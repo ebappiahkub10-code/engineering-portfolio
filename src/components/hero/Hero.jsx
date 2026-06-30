@@ -2,22 +2,23 @@ function Hero() {
   return (
     <section className="hero-section" id="home">
       <div className="hero-content">
-        <p className="eyebrow">AI • FinTech • Software Engineering</p>
-
+        <p className="eyebrow">AI • FINTECH • CYBERSECURITY</p>
+        
         <h1>
-          Building intelligent software for smarter business and financial
-          decisions.
+          Building intelligent systems that help people and businesses make
+          better decisions.
         </h1>
 
         <p className="hero-copy">
-          I’m Enoch Appiah-Kubi, a software engineer building AI decision
-          support systems, fintech tools, and full-stack products that turn
-          complex information into clear action.
+          I’m Enoch Appiah-Kubi, a software engineer focused on AI, financial
+          technology, and cybersecurity. I enjoy building products that combine
+          thoughtful engineering, intelligent systems, and great user
+          experiences.
         </p>
 
         <div className="hero-actions">
           <a href="#growthpilot" className="primary-button">
-            Explore GrowthPilot
+            View GrowthPilot
           </a>
           <a href="#projects" className="secondary-button">
             View Projects
@@ -25,35 +26,20 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-panel" aria-hidden="true">
-        <div className="panel-header">
-          <span />
-          <span />
-          <span />
-        </div>
-
-        <div className="signal-card">
-          <p>GrowthPilot Signal</p>
-          <strong>Profit risk improving</strong>
-          <span>AI reasoning detected stronger margin stability.</span>
-        </div>
-
-        <div className="metric-row">
-          <div>
-            <span>Focus</span>
-            <strong>AI Systems</strong>
+      <div className="hero-product-frame">
+        <div className="hero-window-bar">
+          <div className="window-dots">
+            <span />
+            <span />
+            <span />
           </div>
-          <div>
-            <span>Domain</span>
-            <strong>FinTech</strong>
-          </div>
+          <p>GrowthPilot Workspace</p>
         </div>
 
-        <div className="decision-flow">
-          <span>Data</span>
-          <span>Reasoning</span>
-          <span>Action</span>
-        </div>
+        <img
+          src="/images/growthpilot/workspace-hero.png"
+          alt="GrowthPilot AI workspace showing a business question, structured response, and active decision workspace"
+        />
       </div>
     </section>
   );

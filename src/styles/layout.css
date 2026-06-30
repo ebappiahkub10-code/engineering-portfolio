@@ -1,0 +1,29 @@
+.portfolio-shell {
+  min-height: 100vh;
+  padding: 28px 48px 80px;
+}
+
+.section,
+.hero-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 110px 0;
+}
+
+.section-header {
+  max-width: 780px;
+  margin-bottom: 34px;
+}
+
+@media (max-width: 760px) {
+  .portfolio-shell {
+    padding: 20px;
+  }
+
+  .section {
+    padding: 76px 0;
+  }
+}

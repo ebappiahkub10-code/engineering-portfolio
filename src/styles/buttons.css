@@ -1,0 +1,21 @@
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: var(--radius-pill);
+  font-weight: 850;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #ffffff, #cfd7ff);
+  color: #080b14;
+}
+
+.secondary-button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
