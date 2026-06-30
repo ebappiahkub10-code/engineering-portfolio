@@ -1,9 +1,17 @@
+import Navbar from "./components/layout/Navbar";
+import GrowthPilotShowcase from "./components/growthpilot/GrowthPilotShowcase";
+import ProjectsSection from "./components/projects/ProjectsSection";
+import AboutSection from "./components/about/AboutSection";
+import ContactSection from "./components/contact/ContactSection";
+
 import "./App.css";
 
 function App() {
   return (
     <main className="portfolio-shell">
-      <section className="hero-section">
+      <Navbar />
+
+      <section className="hero-section" id="home">
         <p className="eyebrow">AI • FinTech • Software Engineering</p>
 
         <h1>
@@ -25,6 +33,11 @@ function App() {
           </a>
         </div>
       </section>
+
+      <GrowthPilotShowcase />
+      <ProjectsSection />
+      <AboutSection />
+      <ContactSection />
     </main>
   );
 }
