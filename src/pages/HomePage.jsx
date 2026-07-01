@@ -2,6 +2,7 @@ import Hero from "../components/hero/Hero";
 import GrowthPilotShowcase from "../components/growthpilot/GrowthPilotShowcase";
 import ProjectsSection from "../components/projects/ProjectsSection";
 import AboutSection from "../components/about/AboutSection";
+import TechnicalExpertise from "../components/home/TechnicalExpertise";
 import ContactSection from "../components/contact/ContactSection";
 
 function HomePage() {
@@ -12,6 +13,7 @@ function HomePage() {
       <GrowthPilotShowcase />
       <AboutSection />
       <ContactSection />
+      <TechnicalExpertise />
     </>
   );
 }
