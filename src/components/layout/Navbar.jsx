@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <header className="navbar">
-      <a href="#home" className="nav-logo">
+      <Link to="/" className="nav-logo">
         EA-K
-      </a>
+      </Link>
 
       <nav className="nav-links" aria-label="Main navigation">
-        <a href="#projects">Engineering Work</a>
-        <a href="#about">Journey</a>
+        <Link to="/">Home</Link>
+        <Link to="/growthpilot">GrowthPilot</Link>
+        <Link to="/thinking-log">Thinking Log</Link>
         <a href="#contact">Contact</a>
       </nav>
     </header>

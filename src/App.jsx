@@ -1,22 +1,23 @@
-import Navbar from "./components/layout/Navbar";
-import Hero from "./components/hero/Hero";
-import GrowthPilotShowcase from "./components/growthpilot/GrowthPilotShowcase";
-import ProjectsSection from "./components/projects/ProjectsSection";
-import AboutSection from "./components/about/AboutSection";
-import ContactSection from "./components/contact/ContactSection";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import "./App.css";
+import Navbar from "./components/layout/Navbar";
+import HomePage from "./pages/HomePage";
+import GrowthPilotPage from "./pages/GrowthPilotPage";
+import ThinkingLogPage from "./pages/ThinkingLogPage";
 
 function App() {
   return (
-    <main className="portfolio-shell">
-      <Navbar />
-      <Hero />
-      <GrowthPilotShowcase />
-      <ProjectsSection />
-      <AboutSection />
-      <ContactSection />
-    </main>
+    <BrowserRouter>
+      <main className="portfolio-shell">
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/growthpilot" element={<GrowthPilotPage />} />
+          <Route path="/thinking-log" element={<ThinkingLogPage />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 
