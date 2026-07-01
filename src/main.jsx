@@ -12,6 +12,7 @@ import "./styles/cards.css";
 import "./styles/navigation.css";
 import "./styles/hero.css";
 import "./styles/growthpilot.css";
+import "./styles/case-study.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
