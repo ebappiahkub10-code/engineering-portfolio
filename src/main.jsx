@@ -11,6 +11,7 @@ import "./styles/buttons.css";
 import "./styles/cards.css";
 import "./styles/navigation.css";
 import "./styles/hero.css";
+import "./styles/growthpilot.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

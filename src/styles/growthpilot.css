@@ -1,0 +1,53 @@
+.growthpilot-case-preview {
+  padding-top: 80px;
+}
+
+.case-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.case-preview-card {
+  min-height: 310px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.case-preview-card span {
+  display: inline-flex;
+  margin-bottom: 38px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.case-preview-card h3 {
+  margin-bottom: 14px;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.case-preview-card p {
+  margin-bottom: 0;
+}
+
+.highlight-card {
+  background:
+    radial-gradient(circle at top right, rgba(124, 92, 255, 0.2), transparent 16rem),
+    rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 1050px) {
+  .case-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .case-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
